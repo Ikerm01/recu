@@ -9,7 +9,7 @@ def tomar_pedido():
     print("Tomando pedido...")
 
 def editar_pedido():
-    print("Preparando pedido...")
+    print("Deseas anadir o eliminar ingredientes?")
 
 def cobrar_pedido():
     print("Cobrando pedido...")
@@ -22,7 +22,7 @@ def main():
         if opcion == '1':
             tomar_pedido()
         elif opcion == '2':
-            tomar_pedido()
+            editar_pedido()
         elif opcion == '3':
             cobrar_pedido()
         elif opcion == '4':
