@@ -43,3 +43,10 @@ def generar_informe(register.log, paraula_clau):
              f"---------------------------------------")
     
   return informe
+
+def guardar_informe(register.log, informe):
+    try:
+        with open(register.log, 'w', encoding='utf-8') as fitxer:
+            fitxer.write(informe)
+    except Exception as e:
+        print(f"No s'ha pogut guardar l'informe: {e}")
