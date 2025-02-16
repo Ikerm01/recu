@@ -8,3 +8,5 @@ def llegir_fitxer(register.log):
     except Exception as e:
         print(f"Error inesperat: {e}")
         return []
+def comptar_registres(registre):
+    return len(registre)
