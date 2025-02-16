@@ -8,5 +8,14 @@ def llegir_fitxer(register.log):
     except Exception as e:
         print(f"Error inesperat: {e}")
         return []
+      
 def comptar_registres(registre):
     return len(registre)
+
+def comptar_per_tipus(registre):
+  tipus = {"INFO": 0, "WARNING": 0, "ERROR": 0}
+  for linia in registre:
+      for clau in tipus.keys():
+          if clau in linia:
+              tipus[clau] += 1
+  return tipus
