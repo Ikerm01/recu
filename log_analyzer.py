@@ -19,3 +19,6 @@ def comptar_per_tipus(registre):
           if clau in linia:
               tipus[clau] += 1
   return tipus
+
+def comptar_paraula_clau(registre, paraula_clau):
+  return sum(linia.lower().count(paraula_clau.lower()) for linia in registre)
